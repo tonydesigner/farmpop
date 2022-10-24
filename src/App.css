@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+html,body{height: 100vh; font-family: 'Raleway', sans-serif;}
+
+:root{
+	--df:flex;
+	--jcc:center;
+	--jca:space-around;
+	--jcb:space-between;
+	--ai:center;
+	--bgp:#000;
+	--bgb:#fff;
+	--bg: #00AFEF;
+	--sch: 450px;  
+}
+
+.center{display:var(--df);justify-content: var(--jcc);align-items: var(--ai);}
+.margin{display:var(--df);justify-content: var(--jca);align-items: var(--ai);}
+.space{display:var(--df);justify-content: var(--jcb);align-items: var(--ai);}
+
+
+.brd{border: 1px solid;}
+section{height:var(--sch)}
+.slid{background-image:url('./assets/slide01.png');background-repeat:no-repeat; background-size: cover; background-position:center;  color:var(--bgb); height:100%}
+
+.topo{ height: 140px; background-color:var(--bg); padding:1em}
+.topo img{width:180px;}
+
+form{width:815px; height:100%;padding:1em;text-align: right;}
+form input{width: 362px; height:33px; padding:.4em; font-size: 1em;outline: none;border-radius:.3em; border:0;}
+form button{width:82px; height:33px;background-color:var(--bg); color:var(--bgb); border: 1px solid;border-radius:.3em;cursor:pointer;}
+form button:hover{background-color:#0f3a7f;box-shadow: 1px 5px 15px #0f3a7f;}
+
+.destaques{height:auto;padding:1em; max-width: 1000px; margin: 0 auto;}
+.cx{width: 300px; height: 218px; text-align:center; padding:1em }
+.cx img {width:100%;}
+
+
+.menu{text-align: center; height: 100px; background-color:var(--bgb); padding: 2em}
+.menu ul li{display: inline; font-size: 14pt; color: var(--bg); padding:1em;}
+
+.link{text-decoration:none; color: var(--bg	)}
+
+
+
+.prodHeader h2{border-bottom: 3px solid #ccc;}
+
+h3{border-bottom: 3px solid var(--bg); padding:1em; color: #666;}
+
+.prod{padding:1em; max-width: 950px; height:auto; margin: 0 auto; flex-wrap: wrap;}
+
+.box{width:255px; height:auto; margin: .5em 1em; padding:1em;box-shadow: 0px 5px 5px #ccc;}
+.box img{width: 225px; }
+.box span{padding:.3em; display:block;height:45px; width:100%; text-align: right; font-size: 19pt; font-family: 'Bebas', sans-serif; font-weight: bold;color: var(--bg)}
+
+
+@media (max-width: 600px){
+	.topo{display:block; width: 100%;height:auto; text-align:center}
+	.topo img{width: 250px;}
+	form{display: block; width:100%; text-align:center;}
+	.menu{display:none;}
+	.menuMoble{display:block;}
+
+	
+}
